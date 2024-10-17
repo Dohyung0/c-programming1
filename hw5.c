@@ -1,7 +1,7 @@
 #include <stdio.h>
 void solve(n)
 {
-	if (n <= 0) {
+	if (n == 0) {
 		return;
 	}
 
