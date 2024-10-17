@@ -1,12 +1,14 @@
-#include<stdio.h>
-int main(void) {
+#include <stdio.h>
+int main()
+{
 	int num;
 	printf("Please enter a number: ");
 	scanf_s("%d", &num);
-	if (num % 1 == 0 && num % num == 0) {
-		printf("It is a prime number.");
+	for (int i = 2; i < num / 2; i++) {
+		if (num % i == 0) {
+			printf("It is not a prime number. \n");
+			return 0;
+		}
 	}
-	else {
-		printf("It is not a prime number.");
-	}
+	printf("It is a prime number. \n");
 }
